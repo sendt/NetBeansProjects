@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>My First Page</title> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0&">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .menu{
+        float: left;
+        width: 20%;
+        text-align: center;
+    }
+    .menu a{
+        background-color: #e5e5e5;
+        padding:8px;
+        margin-top: 7px;
+        display: block;
+        width: 100%;
+        color: black;        
+    }
+    .main{
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+    }
+    .rigth{
+        background: #e5e5e5;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+    }
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+#linkyazısı{
+color:black;
+text-align:center;
+text-size:25;
+background:yellow;
+}
+ul{
+list-style-type:none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background:#111111;
+}
+li{
+float:left;
+}
+li a{
+display:table;
+color:white;
+text-align:center;
+padding:16px;
+text-decoration:none;
+}
+li a:hover{
+background-color:#F3B416;
+}
+table#table2{
+background:yellow;
+width:100%;
+}
+table, th, td{
+border:	1px solid black;
+border-collapse:collapse;
+}
+th, td{
+padding:15px;
+}
+th{
+text-align:left;
+}
+p{
+font-size:15px;
+color:#27EE04;;
+text-align:center;
+}
+h1{
+color:#27EE04;
+text-align:center;
+}
+#redprgrh{
+color:black;
+font-size:15px;
+font-style:bold;
+text-align:center;
+}
+
+</style>
+<body style="background-image:url('Backgrounds.jpg')">
+<h1  >Welcome to my fisrt page </h1>
+<hr>
+<p >I started web programming with this project</p>
+<p style="font-family:verdana">
+<abbr title="İf you wanna know what i had live :)"> Here is my <q>biography</q></abbr>
+</p>
+<p>
+<img src="me.jpg" alt="my photo" style="width:70px; height:70px;float:center;">
+</p>
+<ul>
+ <li><a href=""  target="_blank" title="şimdilik boş sayfa">Anasayfa</a> </li>
+ <li><a href="" target="_blank" title="şimdilik boş sayfa">Misyonumuz </a> </li>
+ <li><a href="" target="_blank" title="şimdilik boş sayfa">vizyonumuz </a></li>
+ <li><a href="" target="_blank" title="şimdilik boş sayfa">İletişim </a></li>
+ <li><a href="" target="_blank" title="şimdilik boş sayfa">İletişim </a></li>
+</ul>	
+<br>
+
+<p id="redprgrh">we are going to make different thing now look at the pic pls and <ins>
+Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic</ins></p> 
+<p>
+<img src="workplace.jpg" alt="picture" style="float:center;width:400;height:379;" usemap="#usethis">
+	<map name="usethis">
+	    <area shape="rect" coords="34,44,270,350" alt="click for computer inform" href="https://www.techopedia.com/definition/4607/computer" target="_blank">
+		<area shape="rect" coords="290,172,333,250" alt="click for phone inform" href="https://www.techopedia.com/definition/2955/mobile-phone" target="_blank"	>
+		<area shape="circle" coords="337,300,44" alt="click for coffee inform" href="http://www.ncausa.org/about-coffee/what-is-coffee" target="_blank">
+	</map>	
+</p>	
+<table style="width:100%">
+<tr>
+  <th>student name</th>
+  <th>surname</th>
+  <th>student num.</td>
+</tr>
+<tr>
+	<td> ali</td>
+	<td>Veli</td>
+	<td>13260019</td>
+</tr>
+</table>
+
+<p style="color:black">Okay and this tables will be different</p>
+<table id="table2">
+<tr>
+  <th>NAME:</th>
+  <td>Ali</td>
+</tr>
+<tr>
+<th rowspan="2">TELEPHONE:</th>
+<td>telefon1</td>
+</tr>
+<tr>
+<td>telefon2</td>
+</tr>
+</table>
+
+<iframe src="https://www.youtube.com/" width="100%" height="100%" style="border:2px solid black;" name="iframe_a"></iframe>
+<br>
+<p id="linkyazısı"><a href="https://www.youtube.com/watch?v=DEg41nsn6o0" target="iframe_a">Click</a> to go to youtube website and listen a music :)</p>
+<p>
+<button type="button" onclick="isik(1)">ışığı aç</button>
+<button type="button" onclick="isik(0)"> ışığı kapat</button>
+</p>
+<p><img id="resimnesnesi" src="kapalı.gif" width="100" height="180"></img></p>
+<script>
+  function isik(e){
+ var pic;
+ if(e==0){
+ pic="kapalı.gif"
+ }else{
+ pic="acık.gif"
+ }
+	document.getElementById('resimnesnesi').src=pic;
+	document.getElementById('resimnesnesi').style.backgroundColor="black";
+ }
+</script>
+
+
+<div style="background-color:#e5e5e5; padding:15px;text-align:center">
+    <h1 style="font-size:10vm ">Bu Düzenin Başlığı</h1>
+</div>
+
+<div style="overflow:auto">
+    <div class="menu">
+        <a href="">Link1</a>
+        <a href="">Link2</a>
+        <a href="">Link3</a>
+        <a href="">Link4</a>
+    </div>
+    
+    <div class="main">
+        <h2 style="font-size:8vm">Buda konun başlığı </h2>
+        <p>The article will be disply in here area</p>
+    </div>
+    
+    <div class="rigth">
+        <h2>Title of rigth part</h2>
+        <p> some inform here e......</p>
+    </div>
+    
+</div>
+<div style="background-color:#e5e5e5;text-align: center;padding: 10px;margin-top: 7px ">www.bayram.net</div>
+
+</body>
+
+</html>
