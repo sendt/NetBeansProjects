@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script scr="">
+
+        </script>
+        <title>Homework</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        h1{
+            text-align: center;
+            color: yellow;
+            font-size: 8vm;
+            padding: 15px;
+        }
+        .form{
+            color: yellow;
+
+        }
+        .checkboxs{
+            float:center;
+            text-align:center;
+        }
+    </style>
+    <body style="background-image:url('back.jpg');width:auto;height:auto">
+    <center>
+        <div class="form">
+        <form action="newjsp.jsp" method="get"> 
+                <fieldset style="border: 2px solid yellow">
+                    NAME:<br>
+                    <input type="text" name="name"> <br>
+                    SURNAME:<br>
+                    <input type="text" name="Surname"><br>
+                    <input type="submit" value="submit" name="gonder"><br>
+
+                    <input type="radio" name="gender" value="male" checked>Male<br>
+                    <input type="radio" name="gender" value="female">Female<br>
+                    <input type="radio" name="gender" value="trans">Other<br>
+
+                    <select name="broncity">
+                        
+                        <option value="Adıyaman">Adıyaman</option>
+                        <option value="Adıyaman">Konya</option>
+                        <option value="Adıyaman">İstanbul</option>   
+                        
+                    </select>
+                </fieldset>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
