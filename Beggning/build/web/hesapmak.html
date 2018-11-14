@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hesap makinesi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1{
+                text-align: center;
+                border:  5px solid red;
+                padding: 5px;
+                margin: 5px;
+                border-collapse: collapse;
+                }
+                table{
+                    width: auto;
+                    border: 2px solid black;
+                    align-items: center;
+                    
+                }  
+                
+        </style>
+
+
+    </head>
+    <body>
+        <h1>Sınav sorusu hesap makinesi</h1>
+        <center>
+        <table>
+            <tr>
+                <th>Basit hesap makinesi</th>
+            </tr>
+            <tr><td>
+                    <input type="text" id="sayi1" placeholder="birinci sayı:"></td>
+            </tr>
+
+            <tr><td>
+                    <input type="text" id="sayı2" placeholder="ikinci sayı:">    </td>
+            </tr>
+            <tr><td>
+                    <p>Lütfen işlem secin:</p>   </td>
+            </tr>    
+            <tr><td>
+                    <input type="radio"  name="islem" value="Toplama">Toplama<br>    
+                    <input type="radio" name="islem" value="Cıkarma">Çıkarma<br>    
+                    <input type="radio" name="islem" value="Carpma">Çarpma<br>    
+                    <input type="radio" name="islem" value="Bolme">Bölme    </td>
+            </tr>
+            <tr><td>
+                    <input type="button" onclick="sonucbul" value="Hesapla">
+                </td>
+            </tr>
+
+            <tr><td>
+                    <input type="text" id="sonuc" placeholder="Sonuc"></td>
+            </tr>
+
+        </table></center>
+    <script>
+        function sonucbul(){
+            String islem=request.getParameter("islem");
+            
+            if(islem.equals("Bolme") && s1==0)
+               window.alert("hata");
+        }
+        
+        
+    </script>
+    
+    </body>
+</html>

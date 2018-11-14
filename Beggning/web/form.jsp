@@ -7,7 +7,7 @@
 <%@page import="java.io.BufferedReader"%>
 <%@page import="java.io.FileReader"%>
 <%@page import="java.io.File"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="iso-8859-9"%>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -58,29 +58,29 @@ and open the template in the editor.
             <form action="newjsp.jsp" method="post">
                 <table style="width:75%;">
                     <th>
-                        BaÅŸvuru formu:
+                        Baþvuru formu:
                     </th>
                     <tr>
                         <td>
-                            AdÄ±:
+                            Adý:
                             <input type="ad" name="adal" value=""></td>
                     </tr>
                     <tr><td>
-                            SoyadÄ±:
-                            <input type="soyadÄ±" name="soyadal" value="">  </td>
+                            Soyadý:
+                            <input type="soyadý" name="soyadal" value="">  </td>
                     </tr>
                     <tr><td>
-                            DoÄŸum tarihi:
+                            Doðum tarihi:
                             <input type="date" name="dogumtarihi" max="2018-11-06"></td>
                     </tr>
                     <tr><td>
                             Cinsiyet:
                             <input type="radio" name="cinsiyet" value="male" checked> Erkek
-                            <input type="radio" name="cinsiyet" value="female"> KadÄ±n
-                            <input type="radio" name="cinsiyet" value="other"> DiÄŸer</td>
+                            <input type="radio" name="cinsiyet" value="female"> Kadýn
+                            <input type="radio" name="cinsiyet" value="other"> Diðer</td>
                     </tr>
                     <tr><td>
-                            DoÄŸum Yeri:
+                            Doðum Yeri:
                             <select name="broncity">
 
                                 <%
@@ -95,9 +95,9 @@ and open the template in the editor.
                             </select></td>
                     </tr>
                     <tr><td>
-                            YabancÄ± Diller:
-                            <input type="checkbox" name="dil" value="Ä°ngilizce">Ä°ngilizce
-                            <input type="checkbox" name="dil" value="TÃ¼rkÃ§e">TÃ¼rkÃ§e
+                            Yabancý Diller:
+                            <input type="checkbox" name="dil" value="Ýngilizce">Ýngilizce
+                            <input type="checkbox" name="dil" value="Türkçe">Türkçe
                             <input type="checkbox" name="dil" value="ispanyolca">ispanyolca</td>
                     </tr>
                     <tr><td>
@@ -117,13 +117,13 @@ and open the template in the editor.
         </div>                
         <script>
             var tarih = new Date();
-            var yÄ±l = tarih.getFullYear();
+            var yýl = tarih.getFullYear();
             var ay = tarih.getMonth();
-            var gÃ¼n = tarih.getDay();
+            var gün = tarih.getDay();
             var saat = tarih.getHours();
             var dakika = tarih.getMinutes();
             var saniye = tarih.getSeconds();
-            document.write(gÃ¼n + "/" + ay + "/" + yÄ±l + "<br>" + saat + ":" + dakika + ":" + saniye + "<br>");
+            document.write(gün + "/" + ay + "/" + yýl + "<br>" + saat + ":" + dakika + ":" + saniye + "<br>");
 
             var userAgent = navigator.userAgent;
             var opera = (userAgent.indexOf('Opera') != -1);

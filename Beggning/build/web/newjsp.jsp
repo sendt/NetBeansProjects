@@ -33,7 +33,7 @@
         String cinsiyet=request.getParameter("cinsiyet");
         out.print(cinsiyet);
         out.print("<br>"); 
-        out.println("ŞEhir:"+request.getParameter("broncity"));
+        out.println("Şehir:"+request.getParameter("broncity"));
         out.print("<br>"); 
         String secimler[] = request.getParameterValues("dil");
             if (secimler != null) {
